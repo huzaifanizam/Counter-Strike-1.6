@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppin', sans-serif;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    /* border-radius: 10px; */
+    /* padding: 30px 40px; */
+    background: url(../images/another\ bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.buttonOnBody{
+    padding: 0 55px ;
+}
+h2{
+    color: #FFFFFD;
+    padding-top:3px ;
+    padding-bottom:3px ;
+}
+h2:hover{
+    color:#B3AA0A;
+}
+img{
+ width: 450px;
+ height: 100px;
+}
