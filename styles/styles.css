@@ -23,7 +23,9 @@
 h2{
     color: #FFFFFD;
     padding-top:3px ;
-    padding-bottom:3px ;
+    padding-bottom:1px ;
+    width: 146px;
+    margin-bottom: 1px;
 }
 h2:hover{
     color:#B3AA0A;
