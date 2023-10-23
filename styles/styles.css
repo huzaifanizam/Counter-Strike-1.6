@@ -1,4 +1,9 @@
-*{
+:root{
+    --color-hover:#B3AA0A;
+    --color-box:#495946;
+    --color-button:#323d30;
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,8 +13,6 @@
 .body {
     width: 100%;
     height: 100vh;
-    /* border-radius: 10px; */
-    /* padding: 30px 40px; */
     background: url(../images/another\ bg.webp) no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,20 +20,41 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.buttonOnBody{
-    padding: 0 55px ;
+
+.buttonOnBody {
+    padding: 0 55px;
+    position: relative;
 }
-h2{
+
+h2 {
     color: #FFFFFD;
-    padding-top:3px ;
-    padding-bottom:1px ;
+    padding-top: 3px;
+    padding-bottom: 1px;
     width: 146px;
     margin-bottom: 1px;
 }
-h2:hover{
-    color:#B3AA0A;
+
+h2:hover {
+    color: var(--color-hover);
+    cursor: pointer;
 }
-img{
- width: 450px;
- height: 100px;
+
+img {
+    width: 450px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.boxNewGame {
+    width: 400px;
+    height: 70%;
+    color: ;
+    background-color: var(--color-box);
+    position: absolute;
+    top: 15%;
+    bottom: 50%;
+    left: 30%;
+    right: 50%;
+    text-align: center;
+    display: none;
 }
