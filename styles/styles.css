@@ -45,6 +45,7 @@ img {
     cursor: pointer;
 }
 
+/* new Game Functions */
 .boxNewGame {
     width: 400px;
     height: 70%;
@@ -55,6 +56,49 @@ img {
     bottom: 50%;
     left: 30%;
     right: 50%;
+    text-align: center;
+    display: none;
+}
+/* Find Servers Functions */
+.boxFindServers{
+    width: 650px;
+    height: 70%;
+    color: ;
+    background-color: var(--color-box);
+    position: absolute;
+    top: 15%;
+    bottom: 50%;
+    left: 20%;
+    right: 80%;
+    text-align: center;
+    display: none;
+}
+
+/* Option Functions */
+.boxOption{
+    width: 650px;
+    height: 70%;
+    color: ;
+    background-color: var(--color-box);
+    position: absolute;
+    top: 15%;
+    bottom: 50%;
+    left: 20%;
+    right: 80%;
+    text-align: center;
+    display: none;
+}
+/* quit Functions */
+.boxQuit{
+    width: 40%;
+    height: 30%;
+    color: ;
+    background-color: var(--color-box);
+    position: absolute;
+    top: 30%;
+    bottom: 80%;
+    left: 30%;
+    right: 70%;
     text-align: center;
     display: none;
 }
