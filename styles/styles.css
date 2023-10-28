@@ -2,6 +2,7 @@
     --color-hover:#B3AA0A;
     --color-box:#495946;
     --color-button:#323d30;
+    --color-text:#FFFFFD;
 }
 * {
     margin: 0;
@@ -27,7 +28,7 @@
 }
 
 h2 {
-    color: #FFFFFD;
+    color: var(--color-text);
     padding-top: 3px;
     padding-bottom: 1px;
     width: 146px;
@@ -49,7 +50,7 @@ img {
 .boxNewGame {
     width: 400px;
     height: 70%;
-    color: ;
+    color: var(--color-text) ;
     background-color: var(--color-box);
     position: absolute;
     top: 15%;
@@ -63,7 +64,7 @@ img {
 .boxFindServers{
     width: 650px;
     height: 70%;
-    color: ;
+    color: var(--color-text) ;
     background-color: var(--color-box);
     position: absolute;
     top: 15%;
@@ -78,7 +79,7 @@ img {
 .boxOption{
     width: 650px;
     height: 70%;
-    color: ;
+    color: var(--color-text) ;
     background-color: var(--color-box);
     position: absolute;
     top: 15%;
@@ -92,7 +93,7 @@ img {
 .boxQuit{
     width: 40%;
     height: 30%;
-    color: ;
+    color: var(--color-text) ;
     background-color: var(--color-box);
     position: absolute;
     top: 30%;
