@@ -2,7 +2,7 @@
 let div = document.getElementById('boxNewGame');
 let display = 0;
 
-function newGmae() {
+function newGame() {
     if (display == 1) {
         div.style.display = 'block';
         display = 0;

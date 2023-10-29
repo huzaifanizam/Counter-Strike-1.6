@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter Strike 1.6</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/newGame.css">
+    <link rel="stylesheet" href="./styles/findServers.css">
+    <link rel="stylesheet" href="./styles/options.css">
+    <link rel="stylesheet" href="./styles/quit.css">
 </head>
 <body>
         <div class="body">
             <div class="buttonOnBody">
-                <h2 onclick="newGmae()">New Game</h2>
+                <h2 onclick="newGame()">New Game</h2>
                 <h2 onclick="findServers()">Find Servers</h2>
                 <h2 onclick="option()">Option</h2>
                 <h2 onclick="quit()">Quit</h2>
@@ -19,6 +23,11 @@
             <div class="boxNewGame" id="boxNewGame">
                 <div class="header">
                     <h3>Creat Server</h3>
+                </div>
+                <div class="header">
+                    <button>Server</button>
+                    <button>Game</button>
+                    <button>CPU Playeer Options</button>
                 </div>
                 <div class="box-body">
                     <select name="" id="">

@@ -1,0 +1,27 @@
+:root{
+    --color-hover:#B3AA0A;
+    --color-box:#495946;
+    --color-button:#323d30;
+    --color-text:#FFFFFD;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppin', sans-serif;
+}
+
+/* Find Servers Functions */
+.boxFindServers{
+    width: 650px;
+    height: 70%;
+    color: var(--color-text) ;
+    background-color: var(--color-box);
+    position: absolute;
+    top: 15%;
+    bottom: 50%;
+    left: 20%;
+    right: 80%;
+    text-align: center;
+    display: none;
+}
