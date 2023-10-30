@@ -13,7 +13,7 @@
 
 /* quit Functions */
 .boxQuit{
-    width: 40%;
+    width: 30%;
     height: 30%;
     color: var(--color-text) ;
     background-color: var(--color-box);
@@ -24,4 +24,12 @@
     right: 70%;
     text-align: center;
     display: none;
+}
+.boxQuit .footer{
+    padding-top: 68px;
+}
+.boxQuit .footer button{
+    width: 100px;
+    height: 40px;
+    /* padding: 8px; */
 }
