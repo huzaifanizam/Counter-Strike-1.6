@@ -1,6 +1,6 @@
 //  new Game Functions 
 let div = document.getElementById('boxNewGame');
-let display = 0;
+let display = 1; // Set the initial state to 1
 
 function newGame() {
     if (display == 1) {
@@ -14,7 +14,7 @@ function newGame() {
 //  Find Servers Functions 
 
 let Serversdiv = document.getElementById('boxFindServers');
-// let display = 0;
+// let display = 1;
 
 function findServers() {
     if (display == 1) {

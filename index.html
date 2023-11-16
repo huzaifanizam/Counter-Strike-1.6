@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter Strike 1.6</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #cursor {
+        position: fixed;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        pointer-events: none; /* Ensure the cursor doesn't interfere with other elements */
+    }
+</style>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/newGame.css">
     <link rel="stylesheet" href="./styles/findServers.css">
@@ -11,9 +27,10 @@
     <link rel="stylesheet" href="./styles/quit.css">
 </head>
 <body>
+    <i id="cursor" class="bi bi-cursor-fill"></i>
         <div class="body">
             <div class="buttonOnBody">
-                <h2 onclick="newGame()">New Game</h2>
+                <h2  onclick="newGame()" onmouseover="swapEvent()" onmouseleave="backToTheNormal()">New Game</h2>
                 <h2 onclick="findServers()">Find Servers</h2>
                 <h2 onclick="option()">Option</h2>
                 <h2 onclick="quit()">Quit</h2>
@@ -75,5 +92,35 @@
         </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="app.js"></script>
+
+
+
+
+    <script type="module">          //Just For practice
+
+        
+        let BodyMouseEvent = (event) =>{
+            console.log("event", 
+            event.pageX,
+           event.pageY)
+            
+           cursor.style.position = "fixed"
+           cursor.style.top = `${event.pageY + 10}px`;
+           cursor.style.left = `${event.pageX + 10}px`;
+        }
+
+
+        let body  = document.querySelector("body");
+
+        document.body.addEventListener( "mousemove", BodyMouseEvent )
+        let cursor = document.querySelector("#cursor");
+ 
+        //window.swapEvent = () =>{
+        //    console.log("Even Catch");
+        //}
+        //window.backToTheNormal = () =>{
+        //    console.log("Even leave");
+        //}
+    </script>
 </body>
 </html>
